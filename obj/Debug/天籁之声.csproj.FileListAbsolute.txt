@@ -1,0 +1,30 @@
+d:\my documents\visual studio 2010\Projects\天籁之声\天籁之声\bin\天籁之声.dll
+d:\my documents\visual studio 2010\Projects\天籁之声\天籁之声\bin\天籁之声.pdb
+d:\my documents\visual studio 2010\Projects\天籁之声\天籁之声\obj\Debug\ResolveAssemblyReference.cache
+d:\my documents\visual studio 2010\Projects\天籁之声\天籁之声\obj\Debug\天籁之声.dll
+d:\my documents\visual studio 2010\Projects\天籁之声\天籁之声\obj\Debug\天籁之声.pdb
+F:\Visual Studio 2010\Projects\天籁之声\天籁之声\bin\天籁之声.dll
+F:\Visual Studio 2010\Projects\天籁之声\天籁之声\bin\天籁之声.pdb
+F:\Visual Studio 2010\Projects\天籁之声\天籁之声\obj\Debug\ResolveAssemblyReference.cache
+F:\Visual Studio 2010\Projects\天籁之声\天籁之声\obj\Debug\天籁之声.dll
+F:\Visual Studio 2010\Projects\天籁之声\天籁之声\obj\Debug\天籁之声.pdb
+C:\Documents and Settings\Administrator\桌面\天籁之声\天籁之声\bin\天籁之声.dll
+C:\Documents and Settings\Administrator\桌面\天籁之声\天籁之声\bin\天籁之声.pdb
+C:\Documents and Settings\Administrator\桌面\天籁之声\天籁之声\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\天籁之声\天籁之声\obj\Debug\天籁之声.dll
+C:\Documents and Settings\Administrator\桌面\天籁之声\天籁之声\obj\Debug\天籁之声.pdb
+F:\天籁之声\天籁之声\bin\天籁之声.dll
+F:\天籁之声\天籁之声\bin\天籁之声.pdb
+F:\天籁之声\天籁之声\obj\Debug\ResolveAssemblyReference.cache
+F:\天籁之声\天籁之声\obj\Debug\天籁之声.dll
+F:\天籁之声\天籁之声\obj\Debug\天籁之声.pdb
+F:\业余爱好\天籁之声\天籁之声\bin\天籁之声.dll
+F:\业余爱好\天籁之声\天籁之声\bin\天籁之声.pdb
+F:\业余爱好\天籁之声\天籁之声\obj\Debug\ResolveAssemblyReference.cache
+F:\业余爱好\天籁之声\天籁之声\obj\Debug\天籁之声.dll
+F:\业余爱好\天籁之声\天籁之声\obj\Debug\天籁之声.pdb
+D:\业余爱好\天籁之声\天籁之声\bin\天籁之声.dll
+D:\业余爱好\天籁之声\天籁之声\bin\天籁之声.pdb
+D:\业余爱好\天籁之声\天籁之声\obj\Debug\天籁之声.csprojResolveAssemblyReference.cache
+D:\业余爱好\天籁之声\天籁之声\obj\Debug\天籁之声.dll
+D:\业余爱好\天籁之声\天籁之声\obj\Debug\天籁之声.pdb

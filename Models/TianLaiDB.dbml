@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="MUSICSTORE" Class="TianLaiDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=JOLIE-PC;Initial Catalog=MUSICSTORE;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="MUSICSTOREConnectionString2" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Album" Member="Album">
+    <Type Name="Album">
+      <Column Name="Aid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Aname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CreatTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="APicture" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Area" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Music" Member="Music">
+    <Type Name="Music">
+      <Column Name="Mid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Mname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Url" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Lyric" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Ranking" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Area" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Aname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PlayList" Member="PlayList">
+    <Type Name="PlayList">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Mid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Uid" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Singer" Member="Singer">
+    <Type Name="Singer">
+      <Column Name="Sid" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Sname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Sphoto" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TuiJian" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserInfo" Member="UserInfo">
+    <Type Name="UserInfo">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Uid" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Uname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(250)" CanBeNull="true" />
+      <Column Name="Photo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Createdata" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AuthCode" Type="System.String" DbType="VarChar(36)" CanBeNull="true" />
+      <Column Name="IsAdmin" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

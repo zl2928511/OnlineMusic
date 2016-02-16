@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7F2BCC2C-0301-4880-8E11-A7A8F8EF5708}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>天籁之声</RootNamespace>
+    <AssemblyName>天籁之声</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\MemberController.cs" />
+    <Compile Include="Controllers\MusicPlayController.cs" />
+    <Compile Include="Controllers\SysAdminController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AlbumMusicModel.cs" />
+    <Compile Include="Models\AlbumPartial.cs" />
+    <Compile Include="Models\MusicPartial.cs" />
+    <Compile Include="Models\MusicSingerModel.cs" />
+    <Compile Include="Models\SingerAlbumModel.cs" />
+    <Compile Include="Models\SingerPartial.cs" />
+    <Compile Include="Models\SysAdminAuthorizeAttribute.cs" />
+    <Compile Include="Models\TianLaiDB.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TianLaiDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TianLianRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Shared\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Shared\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\Member.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\sys2.css" />
+    <Content Include="css\sysadmin.css" />
+    <Content Include="Global.asax" />
+    <Content Include="js\checkbox.js" />
+    <Content Include="js\common.js" />
+    <Content Include="js\lrc.js" />
+    <Content Include="js\Page.js" />
+    <Content Include="js\player.js" />
+    <Content Include="js\reg.js" />
+    <Content Include="js\ting.js" />
+    <Content Include="Views\Member\ConfirmMail.aspx" />
+    <Content Include="Views\Member\DownloadMusic.aspx" />
+    <Content Include="Views\Member\Index.aspx" />
+    <Content Include="Views\Member\LogOn.aspx" />
+    <Content Include="Views\Member\ModifyPassword.aspx" />
+    <Content Include="Views\Member\ModifyPhoto.aspx" />
+    <Content Include="Views\Member\Register.aspx" />
+    <Content Include="Views\Member\Tuiguang.aspx" />
+    <Content Include="Views\Member\UploadMusic.aspx" />
+    <Content Include="Views\Member\UserInfo.aspx" />
+    <Content Include="Views\Member\UserPlaylist.aspx" />
+    <Content Include="Views\Member\Verify.aspx" />
+    <Content Include="Views\MusicPlay\Album.aspx" />
+    <Content Include="Views\MusicPlay\Albums.aspx" />
+    <Content Include="Views\MusicPlay\Default.aspx" />
+    <Content Include="Views\MusicPlay\Index.aspx" />
+    <Content Include="Views\MusicPlay\Lrc.aspx" />
+    <Content Include="Views\MusicPlay\Playlist.aspx" />
+    <Content Include="Views\MusicPlay\SearchByAlbum.aspx" />
+    <Content Include="Views\MusicPlay\SearchByMname.aspx" />
+    <Content Include="Views\MusicPlay\SearchBySname.aspx" />
+    <Content Include="Views\MusicPlay\Singer.aspx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\SysAdmin\AddAlbum.aspx" />
+    <Content Include="Views\SysAdmin\AddMusic.aspx" />
+    <Content Include="Views\SysAdmin\AddSinger.aspx" />
+    <Content Include="Views\SysAdmin\DeleteAlbum.aspx" />
+    <Content Include="Views\SysAdmin\DeleteMusic.aspx" />
+    <Content Include="Views\SysAdmin\DeletePlayList.aspx" />
+    <Content Include="Views\SysAdmin\DeleteSinger.aspx" />
+    <Content Include="Views\SysAdmin\ModAlbum.aspx" />
+    <Content Include="Views\SysAdmin\ModifyAlbum.aspx" />
+    <Content Include="Views\SysAdmin\ModifyMusic.aspx" />
+    <Content Include="Views\SysAdmin\ModifySinger.aspx" />
+    <Content Include="Views\SysAdmin\ModMusic.aspx" />
+    <Content Include="Views\SysAdmin\Permission.aspx" />
+    <Content Include="Views\SysAdmin\ModSinger.aspx" />
+    <Content Include="Views\SysAdmin\SysIndex.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Views\Shared\Site1.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\TianLaiDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>TianLaiDB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Models\TianLaiDB.dbml.layout">
+      <DependentUpon>TianLaiDB.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2226</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

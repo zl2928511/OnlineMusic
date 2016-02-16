@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="TianLaiDB">
+  <DataContextMoniker Name="/TianLaiDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a4641e4b-d5c5-4dda-a855-64e20dc7c8d8" absoluteBounds="0.75, 0.75, 2, 1.9535852050781251">
+      <DataClassMoniker Name="/TianLaiDBDataContext/Album" />
+      <nestedChildShapes>
+        <elementListCompartment Id="982bd45c-9e61-49af-82fc-c9497954584a" absoluteBounds="0.765, 1.21, 1.9700000000000002, 1.393585205078125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="47642c28-849a-4166-bb26-11a153be1d8c" absoluteBounds="3.75, 0.75, 2, 2.3356245930989585">
+      <DataClassMoniker Name="/TianLaiDBDataContext/Music" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4c3b1332-ec3f-4140-a2a7-3f05449bae66" absoluteBounds="3.765, 1.21, 1.9700000000000002, 1.7756245930989585" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="dfa73155-3885-4225-952a-070e38bc429d" absoluteBounds="0.75, 4.75, 2, 1.3805261230468755">
+      <DataClassMoniker Name="/TianLaiDBDataContext/PlayList" />
+      <nestedChildShapes>
+        <elementListCompartment Id="42f91469-a840-4a97-b2fc-0ec63101298a" absoluteBounds="0.765, 5.21, 1.9700000000000002, 0.820526123046875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="bb019144-8fd2-4180-9f02-ca9079136659" absoluteBounds="3.75, 4.75, 2, 1.5715458170572916">
+      <DataClassMoniker Name="/TianLaiDBDataContext/Singer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="273c4ee7-81a7-446d-8fea-94effe7a68bc" absoluteBounds="3.765, 5.21, 1.9700000000000002, 1.0115458170572915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="370b36b4-8995-4c6b-87b7-b724f9397a05" absoluteBounds="6.75, 0.75, 2, 2.5266442871093755">
+      <DataClassMoniker Name="/TianLaiDBDataContext/UserInfo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0c2fede9-2572-43f7-b116-406b8d06fd33" absoluteBounds="6.765, 1.21, 1.9700000000000002, 1.966644287109375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

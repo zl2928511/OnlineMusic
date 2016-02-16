@@ -1,0 +1,73 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="天籁之声.Views.Shared.Site1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>天籁之声</title>
+    <link rel="shortcut icon" type="image/x-icon" href="http://www.yinyuetai.com/favicon.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../../css/style.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" type="text/javascript">
+        function toAction(id) {
+            var keys = document.Sforms.q.value;
+            if (id == 1) { document.Sforms.action = "../MusicPlay/SearchByMname?q=" + keys; }
+            else if (id == 2) { document.Sforms.action = "../MusicPlay/SearchByAlbum?q=" + keys; }
+            else if (id == 3) { document.Sforms.action = "../MusicPlay/SearchBySname?q=" + keys; }
+            else { document.Sforms.action = "MusicPlay/SearchByMname?q=" + keys; }
+        }
+    </script>
+</head>
+<body>
+    <div id="top">
+        <!-- top -->
+        <div id="maintop">
+            <div id="mainlogo">
+                <img src="../../images/logo.gif" alt="天籁之声" /></div>
+            <div id="topright">
+                <div id="topsearch">
+                    <form name="Sforms" id="Sforms" action="" method="post">
+                    <input name="t" type="radio" class="rdo" value="1" checked="checked" onclick="javascript:toAction(1);" />歌曲
+                    <input name="t" type="radio" class="rdo" value="2" onclick="javascript:toAction(2);" />专辑
+                    <input name="t" type="radio" class="rdo" value="3" onclick="javascript:toAction(3);" />歌手
+                    <input name="q" type="text" class="inputs" id="q" size="25" maxlength="30" />
+                    <input type="submit" name="l" id="l" class="submit" value="搜索" />
+                    </form>
+                </div>
+                <div id="topuser">
+                    <a href="http://localhost" onclick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://localhost');return(false);">
+                        设为首页</a>&nbsp; <a href="../MusicPlay/Index?mid=<%=s %>">随便听听</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- menu -->
+    <div id="navtop">
+        <div id="nav">
+            <div class="bottomline">
+            </div>
+            <ul>
+                <li><a href="/">首页</a></li>
+                <li><a href="../MusicPlay/Albums?area=DL" id="inin1">中文专辑</a></li>
+                <li><a href="../MusicPlay/Albums?area=GT" id="inin2">粤语专辑</a></li>
+                <li><a href="../MusicPlay/Albums?area=OM" id="inin3">欧美专辑</a></li>
+                <li><a href="../MusicPlay/Albums?area=RH" id="inin4">日韩专辑</a></li>
+                <li style="float: right">
+                    <%=m %></li>
+            </ul>
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <center>
+        <div class="clearfloat">
+        </div>
+        <div style="width: 980px; margin: 15px 0px; line-height: 20px; text-align: center;
+            color: #808080;">
+            声明：本站只提供在线试听，所有音乐资源都来自互联网！
+            <br />
+            如果本站内容侵犯了您的权利请发邮件告知！
+        </div>
+    </center>
+</body>
+</html>
